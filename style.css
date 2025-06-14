@@ -1,0 +1,172 @@
+@font-face {
+    font-family: font1;
+    src: url("font/Vazirmatn-ExtraLight.woff2") format(woff2);
+}
+@font-face {
+    font-family: font2;
+    src: url("font/Vazirmatn-Light.woff2") format(woff2);
+}
+body {
+    background: rgb(255, 255, 255);
+    margin: 0;
+}
+header {
+    display: flex;
+    align-items: center;
+    font-family: system-ui;
+    padding: 14px 20px 14px 14px;
+    justify-content: space-between;
+    border-bottom: 1px solid #ebebeb;
+}
+h1, h2 {
+    margin: 0;
+}
+.header-h1 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Lobster';
+}
+.stories {
+    display: flex;
+    flex-direction: row;
+    direction: ltr;
+    padding: 18px 12px;
+    gap: 16px;
+    overflow-y: auto;
+}
+.stories-mystory, .stories-stories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Inter';
+    font-size: 12px;
+}
+.stories-m-img, .stories-img {
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+}
+.stories-m-img {
+    border: 2px solid rgb(255, 255, 255);
+    padding: 5px;
+}
+.stories-m-img-add {
+    width: 22px;
+    height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0085f7;
+    color: white;
+    font-weight: bolder;
+    position: absolute;
+    top: 56px;
+    right: 5px;
+    border-radius: 50%;
+}
+.stories-img {
+    border: 2px solid red;
+    padding: 5px;
+}
+.suggestes-posts {
+    margin-top: 30px;
+}
+.suggestes-posts-h1 {
+    margin: 15px 12px 10px;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0 6px 15px;
+    border-bottom: 1px solid rgb(212, 212, 212);
+}
+.suggestes-posts-post {
+    margin-bottom: 30px;
+}
+.suggestes-posts-post-profile {
+    padding: 0 12px;
+}
+.suggestes-posts-post-profile-img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+}
+.suggestes-posts-post-profile {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 4px;
+}
+.suggestes-posts-post-profile-div1 {
+    display: flex;
+    flex-direction: column;
+    margin: 0 6px;
+    justify-content: space-between;
+    padding: 3px 0;
+    width: 50%;
+}
+.suggestes-posts-post-profile-div-h1 {
+    font-family: 'Inter';
+    font-size: 14px;
+    margin: 0;
+}
+.suggestes-posts-post-profile-div-h4 {
+    font-family: 'inter';
+    font-size: 13px;
+    font-weight: 500;
+    margin: 0;
+}
+.suggestes-posts-post-profile-div2 {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 0 6px;
+}
+.suggestes-posts-post-profile-div2-btn {
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    margin: 0 16px 0 0;
+}
+.suggestes-posts-post-menu {
+    padding: 6px 12px;
+    display: flex;
+    justify-content: space-between;
+}
+.suggestes-posts-post-menu- {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: 'inter';
+    font-size: 12px;
+}
+.suggestes-posts-post-menu-l-btn, .suggestes-posts-post-menu-c-btn, .suggestes-posts-post-menu-s-btn, .suggestes-posts-post-menu-sa-btn {
+    padding: 0;
+    background: none;
+    border: none;
+    font-size: 22px;
+}
+.suggestes-posts-post-description {
+    padding: 0 10px;
+}
+.suggestes-posts-post-description-h1 {
+    font-family: 'Inter';
+    font-size: 14px;
+}
+.suggestes-posts-post-description-h2 {
+    font-family: 'Inter';
+    font-size: 14px;
+    margin: 0 4px;
+    font-weight: 500;
+}
+.suggestes-posts-post-description-p {
+    font-family: 'Inter';
+    font-size: 13px;
+    margin: 2px 0 4px;
+}
+.suggestes-posts-post-description-date {
+    font-family: 'Inter';
+    font-size: 14px;
+    color: #9f9f9f;
+}
