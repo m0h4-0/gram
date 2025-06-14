@@ -14,16 +14,19 @@ header {
     display: flex;
     align-items: center;
     font-family: system-ui;
-    padding: 14px 20px 14px 14px;
+    padding: 12px 20px 14px 16px;
     justify-content: space-between;
     border-bottom: 1px solid #ebebeb;
 }
 h1, h2 {
     margin: 0;
 }
+a {
+    text-decoration: none;
+}
 .header-h1 {
     margin: 0;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 500;
     font-family: 'Lobster';
 }
@@ -31,7 +34,7 @@ h1, h2 {
     display: flex;
     flex-direction: row;
     direction: ltr;
-    padding: 18px 12px;
+    padding: 12px 12px 16px;
     gap: 16px;
     overflow-y: auto;
 }
@@ -39,13 +42,13 @@ h1, h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
     font-family: 'Inter';
     font-size: 12px;
 }
 .stories-m-img, .stories-img {
-    width: 76px;
-    height: 76px;
+    width: 78px;
+    height: 78px;
     border-radius: 50%;
 }
 .stories-m-img {
@@ -67,29 +70,42 @@ h1, h2 {
     border-radius: 50%;
 }
 .stories-img {
-    border: 2px solid red;
-    padding: 5px;
+    border: 3px solid red;
+    padding: 4px;
 }
 .suggestes-posts {
     margin-top: 30px;
 }
-.suggestes-posts-h1 {
+.suggestes-posts-title {
     margin: 15px 12px 10px;
     font-family: 'Inter';
     font-size: 18px;
     font-weight: 600;
     padding: 0 6px 15px;
-    border-bottom: 1px solid rgb(212, 212, 212);
+    border-bottom: 1px solid #ebebeb;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.suggestes-posts-title-h1 {
+    font-family: 'Inter';
+    font-size: 18px;
+}
+.suggestes-posts-title-a {
+    color: #0085f7;
+    font-size: 15px;
 }
 .suggestes-posts-post {
     margin-bottom: 30px;
 }
 .suggestes-posts-post-profile {
     padding: 0 12px;
+    display: flex;
+    align-items: center;
 }
 .suggestes-posts-post-profile-img {
-    width: 42px;
-    height: 42px;
+    width: 35px;
+    height: 35px;
     border-radius: 50%;
 }
 .suggestes-posts-post-profile {
@@ -100,7 +116,7 @@ h1, h2 {
 .suggestes-posts-post-profile-div1 {
     display: flex;
     flex-direction: column;
-    margin: 0 6px;
+    margin: 0 8px;
     justify-content: space-between;
     padding: 3px 0;
     width: 50%;
@@ -130,7 +146,7 @@ h1, h2 {
     margin: 0 16px 0 0;
 }
 .suggestes-posts-post-menu {
-    padding: 6px 12px;
+    padding: 6px 15px 10px;
     display: flex;
     justify-content: space-between;
 }
@@ -148,25 +164,25 @@ h1, h2 {
     font-size: 22px;
 }
 .suggestes-posts-post-description {
-    padding: 0 10px;
+    padding: 0 18px 0 15px;
 }
 .suggestes-posts-post-description-h1 {
     font-family: 'Inter';
-    font-size: 14px;
+    font-size: 13px;
 }
 .suggestes-posts-post-description-h2 {
     font-family: 'Inter';
-    font-size: 14px;
+    font-size: 13px;
     margin: 0 4px;
     font-weight: 500;
 }
 .suggestes-posts-post-description-p {
     font-family: 'Inter';
     font-size: 13px;
-    margin: 2px 0 4px;
+    margin: 0 0 4px;
 }
 .suggestes-posts-post-description-date {
     font-family: 'Inter';
-    font-size: 14px;
+    font-size: 12px;
     color: #9f9f9f;
 }
