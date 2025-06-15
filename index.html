@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gram</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto&family=Lobster&display=swap">
+</head>
+<body id="body">
+    <header>
+        <h1 class="header-h1">Gram</h1>
+        <i class="fa-regular fa-paper-plane" id="direct-btn" style="font-size: 18px;"></i>
+    </header>
+    <div class="stories">
+        <div class="stories-mystory" style="position: relative;"><img class="stories-m-img" src="img/myprofile1.png">Your story<div class="stories-m-img-add">+</div></div>
+        <div class="stories-stories" onclick="openStory(allStories.story1)"><img class="stories-img" src="img/img1.jpeg">Gram</div>
+        <div class="stories-stories" onclick="openStory(allStories.story2)"><img class="stories-img" src="img/flag1.png">iran</div>
+        <div class="stories-stories" onclick="openStory(allStories.story3)"><img class="stories-img" src="img/emoji.png">eskelet</div>
+    </div>
+    <div class="story-container" id="storyContainer">
+        <div class="story-strip" id="storyStrip"></div>
+        <div class="story-header">
+            <button onclick="closeStory()" class="story-header-back"><</button>
+            <img id="storyProfile" alt="پروفایل">
+            <span style="font-family: 'Inter'; margin: 0 5px;" id="storyName">نام کاربر</span>
+        </div>
+        <div class="story-image">
+            <img id="storyImage" src="">
+            <div class="story-click left-click" onclick="prevStory()"></div>
+            <div class="story-click right-click" onclick="nextStory()"></div>
+        </div>
+    </div>
+    <div class="suggestes-posts">
+        <div class="suggestes-posts-title">
+            <h1 class="suggestes-posts-title-h1">Suggested for you</h1>
+            <a class="suggestes-posts-title-a" href="#">Older posts</a>
+        </div>
+        <div class="suggestes-posts-post">
+            <div class="suggestes-posts-post-profile">
+                <img class="suggestes-posts-post-profile-img" src="img/flag1.png">
+                <div style="display: flex; justify-content: space-between; width: 100%;">
+                    <div class="suggestes-posts-post-profile-div1">
+                        <h1 class="suggestes-posts-post-profile-div-h1">iran</h1>
+                        <h4 class="suggestes-posts-post-profile-div-h4">Suggested for you</h4>
+                    </div>
+                    <div class="suggestes-posts-post-profile-div2">
+                        <button class="suggestes-posts-post-profile-div2-btn" id="followSuggestedPageBtn">Follow</button>
+                        <i class="fa-solid fa-ellipsis-vertical" style="font-size: 18px;" id="menuSuggestedPageBtn"></i>
+                        <div class="suggestes-posts-post-profile-div2-menu" id="menuSuggestedPageDiv">
+                            <div class="suggestes-posts-post-profile-div2-menu-div" id="menuSuggestedPageDivDiv">
+                                <div class="suggestes-posts-post-profile-div2-menu-div-d1">
+                                    <button class="suggestes-posts-post-profile-div2-menu-div-d1-btn" id="saveBtn"><i class="fa-regular fa-bookmark" id="saveIcon" style="margin: 0 2px;"></i></button>
+                                    Save
+                                </div>
+                                <div class="suggestes-posts-post-profile-div2-menu-div-d2" id="reportSuggestedPage">
+                                    <div class="suggestes-posts-post-profile-div2-menu-div-d2-d">!</div>
+                                    Report
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><img style="width: 100%; aspect-ratio: 1 / 1;" src="img/iran-post1.jpg"></div>
+            <div class="suggestes-posts-post-menu">
+                <div style="display: flex; flex-direction: row; gap: 14px;">
+                    <div class="suggestes-posts-post-menu-">
+                        <button class="suggestes-posts-post-menu-l-btn" id="likeBtn"><i class="fa-regular fa-heart" id="likeIcon"></i></button>261,3k
+                    </div>
+                    <div class="suggestes-posts-post-menu-">
+                        <button class="suggestes-posts-post-menu-c-btn"><i class="fa-regular fa-comment"></i></button>6,457
+                    </div>
+                    <div class="suggestes-posts-post-menu-">
+                        <button class="suggestes-posts-post-menu-s-btn"><i class="fa-regular fa-paper-plane"></i></button>2,460
+                    </div>
+                </div>
+                <div>
+                    <div class="suggestes-posts-post-menu-">
+                        <button class="suggestes-posts-post-menu-sa-btn" id="saveBtn"><i class="fa-regular fa-bookmark" id="saveIcon" style="margin: 0 2px;"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="suggestes-posts-post-description">
+                <div style="display: flex; flex-direction: row;">
+                    <h1 class="suggestes-posts-post-description-h1">iran</h1>
+                    <h2 class="suggestes-posts-post-description-h2" style="font-family: font2; direction: rtl;">خبر جدید !</h2>
+                </div>
+                <div><p class="suggestes-posts-post-description-p" style="font-family: font2; direction: rtl;">موشک های ایران به درستی به هدف خود اصابت کردند.</p></div>
+                <div><span class="suggestes-posts-post-description-date" data-time="2025-06-14T00:13:10"></span></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
